@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 focus:ring-2 focus:ring-primary/50 transition-colors;
+  }
+  
+  .card {
+    @apply bg-white shadow-md rounded-lg p-4 mb-4;
+  }
+  
+  .input {
+    @apply border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-primary;
+  }
+}
